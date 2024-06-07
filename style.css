@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&family=Spinnaker&display=swap");
+
+/*FONTER OVER DET HER*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  --primary: rgba(140, 38, 57, 1);
+  --secondary: rgba(255, 243, 245, 1);
+  --accent: rgba(60, 64, 63, 1);
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 + h2 + h3 {
+  font-family: "Spinnaker", sans-serif;
+  font-style: normal;
+}
+
+/*GENERALE TING OVER*/
+
+/*CODEPEN CODEPENCODEPEN CODEPEN*/
+@layer demo {
+  .compare {
+    display: grid;
+
+    > * {
+      grid-area: 1 / 1;
+    }
+
+    > section {
+      display: grid;
+      place-content: center;
+    }
+
+    .before {
+      mask: linear-gradient(to right, #000 0, var(--pos, 50%), #0000 0);
+    }
+
+    .after {
+      mask: linear-gradient(to right, #0000 0, var(--pos, 50%), #000 0);
+    }
+
+    > input[type="range"] {
+      z-index: 1;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        inline-size: 4px;
+        block-size: 100dvh;
+        background-color: CanvasText;
+      }
+
+      &::-moz-range-thumb {
+        appearance: none;
+        inline-size: 4px;
+        block-size: 100dvh;
+        background-color: CanvasText;
+      }
+    }
+  }
+
+  section img {
+    max-block-size: 80dvh;
+    max-inline-size: 100%;
+  }
+}
+
+@layer demo.support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    block-size: 100%;
+    color-scheme: dark light;
+  }
+
+  body {
+    min-block-size: 100%;
+    font-family: system-ui, sans-serif;
+    display: grid;
+  }
+}
+
+/*CODEPEN CODEPENCODEPEN CODEPEN*/
+
+/*MAIN FORSIDE*/
+
+.forside_grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 4fr;
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+}
+
+.bund-farve {
+  background-color: var(--primary);
+  grid-row: 3/5;
+  grid-column: 1/4;
+  max-width: 100%;
+}
+.forside-img {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  background-color: var(--secondary);
+  /*align-self: stretch;
+  object-fit: cover;*/
+}
+
+.top-text {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  color: var(--primary);
+  font-size: 6rem;
+}
+
+.bund-text {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  color: var(--secondary);
+  font-size: 6rem;
+}
+
+.forside_grid p {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+/*MAIN FORSIDE*/
+
+.port_width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.port_textbox {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  padding: 1% 1%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.port_logo {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 1200px) {
+  /*MAIN FORSIDE*/
+  .forside_grid {
+    grid-template-rows: 1fr 5fr 5fr 4fr;
+    grid-template-columns: 1fr 1.5fr 4fr 0.2fr;
+  }
+
+  .bund-farve {
+    grid-row: 3/5;
+    grid-column: 1/5;
+  }
+
+  .forside-img {
+    grid-row: 2/4;
+    grid-column: 2/3;
+  }
+
+  .top-text {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    font-size: 12rem;
+  }
+
+  .bund-text {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    font-size: 12rem;
+  }
+
+  .forside_grid p {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+  }
+
+  /*MAIN FORSIDE*/
+}
+
+/* Navigation */
+.logo {
+  width: 50px;
+}
+
+.logo_box {
+  display: flex;
+  padding: 1%;
+}
+
+.logo_text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 1% 1%;
+  color: var(--primary);
+  font-size: 2rem;
+}
+header {
+  position: relative;
+  top: 0;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+  background-color: var(--secondary);
+}
+
+#top_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  font-family: "Open sans", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+
+  /* margin-bottom: 100px; */
+}
+
+.search {
+  list-style: none;
+  margin: 0;
+  display: block;
+  padding-right: 20px;
+  color: var(--primary);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  text-align: end;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  text-align: end;
+}
+
+nav a:visited {
+  text-decoration: underline;
+  color: var(--primary);
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:active {
+  text-decoration: underline;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.osv_logo_index {
+  display: none;
+}
+
+#osv_title_index {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* ---------------- BURGER MENU ---------------- */
+  header {
+  }
+
+  .search {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .osv_logo {
+    width: 50px;
+  }
+  .osv_title {
+    font-size: 2rem;
+  }
+
+  #top_header {
+    padding: 2% 2% 5% 0;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 1.5rem;
+  }
+}
