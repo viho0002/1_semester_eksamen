@@ -14,5 +14,3 @@ links.forEach((link) => {
     nav.classList.remove("active");
   });
 });
-
-range.oninput = () => document.body.style.setProperty("--pos", range.value + "%");

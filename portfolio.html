@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div id="top_header">
             <div class="logo_box">
                 <a href="index.html"><img class="logo" src="img/logo.webp" alt="osv_logo"></a>
-                <p class="logo_text">VIKTOR</p>
+                <a class="logo_text" href="index.html">VIKTOR</a>
             </div>
             <nav>
                 <ul class="menu">
@@ -36,56 +38,303 @@
     <main>
         <h1>Portfolio</h1>
         <div class="port_width">
-            <div class="port_textbox">
-                <h2>02_web Studiestarts prøven</h2>
-                <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
-                <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+            <div id="knap1" class="port_textbox">
+                <h2>Tema 2 Studiestarts prøven</h2>
+                <div>
+                    <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
+                    <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+                    <img id="pil-right1" class="port_logo" src="img/Expand_right.png" alt="pil til højre">
+                    <img id="pil-down1" class="port_logo" src="img/Expand_down.png" alt="pil ned">
+                </div>
 
             </div>
-            <div class="port_grid">
-                <div>
-                    <div><img src="img/forside.webp" alt=""></div>
-                    <div></div>
-                    <div></div>
+            <div id="port1" class="port_grid">
+                <div class="web_grid">
+                    <img class="web_img" src="img/webcomputer.webp" alt="copmuter billede">
+                    <div class="web_bund"></div>
+                    <a class="web_img_button" href="http://viktorh.dk/kea/02_web/01_website/website/">view</a>
+
+
                 </div>
                 <div class="grid_1-1">
                     <div>
-                        <h3>Overskrift</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat cumque quibusdam
-                            soluta similique, ducimus temporibus totam, consequuntur neque at, assumenda culpa voluptas
-                            suscipit! Expedita tempore officiis facere! Vero, veritatis!</p>
+                        <h3>Grid</h3>
+                        <p>I starten af skoleåret brugte vi meget tid på at lære om hvordan grid virkede, og en af de
+                            største læringspunkter/test
+                            var under computersited.
+                        </p>
+
+                        <p>
+                            på billidet til højre hvor jeg har brugt en grid som er 1fr 1fr til at sætte billederne og
+                            teksten besiden af hindanden
+                            istedet for under hinanden. same give vert div den samme brede så de tager lige meget plads
+                            på siden. Jeg kunne også
+                            have lavet to diver ovenpå hindanen men det ville ikke give nogen mening fordi de alle bare
+                            skal fylde 1fr.
+                        </p>
+
+                        <p>
+                            på billededet nedenunder kan man se at jeg har brugt et grid der ligner noget som er 2fr 3fr
+                            og nedenunder 3fr 2fr.
+                            Her valgte jeg at lave to forskellige grids da det ville være en god måde at skifte mellem
+                            at have den lille del på vær
+                            side</p>
                     </div>
-                    <div><img src="img/forside.webp" alt=""></div>
+                    <div class="compare">
+                        <section class="before">
+                            <img src="img/webimg1.webp" alt="layotediagram" />
+                        </section>
+                        <section class="after">
+                            <img src="img/webimg2.webp" alt="billede fra start hjemmeside" />
+                        </section>
+                        <input type="range" id="range" step="0.1">
+                    </div>
+                    <div class="move_down">
+                        <h3>Wireframes</h3>
+                        <p>I den her opgave arbedjede vi meget udfra wireframes og grid layoutes, som hjalp meget med at
+                            give en godt start
+                            forståelse på hvordan vi selv kan sætte op de ting i fremtide opgaver.
+                        </p>
+                        <p>
+
+                            Wireframes er meget gode at kende til, da det hjælpe imenst med at have et godt oversigt
+                            over ens hjemmeside, det sammen
+                            med grid layote kan give dig en god idee om hvordan siden skal sættes op og se ud i starten
+                            af pjocekted.
+                        </p>
+
+                        <p>
+                            Der hvor jeg syntes gridlayoute hjælper mest er ved at kigge på det fra mobil til computer
+                            versionerne, det giver et
+                            godt overblik om ting vil give mening og hvordan de forskellige grids skal hænge sammen. det
+                            kan også hjælpe med at
+                            finde ud af om noget bare ikke vil fungere da du ikke kan få det til at give mening meg grid
+                            eller noget andet.
+                        </p>
+                    </div>
+                    <img class="port_img" src="img/webimg3.webp" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="port_width">
+            <div id="knap2" class="port_textbox">
+                <h2>Tema 3 Emnesite</h2>
+                <div>
+                    <img class="port_logo" src="img/figma.webp" alt="figma logo">
+                    <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
+                    <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+                    <img id="pil-right2" class="port_logo" src="img/Expand_right.png" alt="pil til højre">
+                    <img id="pil-down2" class="port_logo" src="img/Expand_down.png" alt="pil ned">
+
+                </div>
+
+            </div>
+            <div id="port2" class="port_grid">
+                <div class="web_grid">
+                    <img class="web_img" src="img/webemnesite.webp" alt="billede af emnesite">
+                    <div class="web_bund"></div>
+                    <a class="web_img_button" href="http://viktorh.dk/kea/03_ux/01_kodet_site/">view</a>
+                </div>
+                <div class="grid_1-1">
                     <div>
-                        <h3>Overskrift</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat cumque quibusdam
-                            soluta similique, ducimus temporibus totam, consequuntur neque at, assumenda culpa voluptas
-                            suscipit! Expedita tempore officiis facere! Vero, veritatis!</p>
+                        <h3>“Låne” kode</h3>
+                        <p>I denne opgave valgte jeg at finde en scroll menu på codepen da jeg havde en idee ti lat lave
+                            en ting med små billeder
+                            der skulle skifte et stort billede.
+                        </p>
+                        <p>
+                            Jeg valgte at tage noget af koden og placere den der hvor jeg skuldebruge den på min side
+                            hvor jeg derefter valgte at
+                            kigge igennem koden og undersøgte hvordan jeg skulde lave den til noget der ville passe min
+                            side bedre ved at ændre
+                            hover eftects former og farver.
+                        </p>
+                        <p>
+                            Jeg kunne have arbejdet og prøvet frem fra starten af men fordi der var lidt press på tid da
+                            jeg lavede det tænkte jeg
+                            at tage noget der virkede og arbejde vidre fra det ville være bedre</p>
                     </div>
-                    <div><img src="img/forside.webp" alt=""></div>
+                    <img class="port_img" src="img/webimg4.webp" alt="billede af et slideshow">
+                    <div class="move_down">
+                        <h3>Test</h3>
+                        <p>Hvilke, I den her opgave lavede jeg både 5 secunder test og tænke højt test. 5 sekunder
+                            testen
+                            var en god måde at få mange personers svar på kort tid, via testen fandt jeg ud af at min
+                            forside var lidt for
+                            forvirende of fyld med for mange farver. Men siden jeg ikke var ansigt til ansigt kunne jeg
+                            ikke få et præcis svar på
+                            hvad de måske mente med deres små notater i testen.
+
+                        </p>
+                        <p>
+
+                            For at få folk til at uddybe deres svar ville en tænke højt test være bedre siden du har
+                            chance til at stille spørgsmål
+                            til alle de svar du ikke forstår
+                        </p>
+
+
+                    </div>
+                    <img class="port_img" src="img/webimg5.webp" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="port_width">
+            <div id="knap3" class="port_textbox">
+                <h2>Tema 4 Temaopgave</h2>
+                <div>
+                    <img class="port_logo" src="img/illustrator.webp" alt="illustrator logo">
+                    <img class="port_logo" src="img/javascriptlogo.webp" alt="javascript logo">
+                    <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
+                    <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+                    <img id="pil-right3" class="port_logo" src="img/Expand_right.png" alt="pil til højre">
+                    <img id="pil-down3" class="port_logo" src="img/Expand_down.png" alt="pil ned">
+
+                </div>
+
+            </div>
+            <div id="port3" class="port_grid">
+                <div class="web_grid">
+                    <img class="web_img" src="img/webspil.webp" alt="copmuter billede">
+                    <div class="web_bund"></div>
+                    <a class="web_img_button" href="http://viktorh.dk/kea/04_animation/website/index.html">view</a>
+                </div>
+                <div class="grid_1-1">
+                    <div>
+                        <h3>Aktivitetsdiagram og Statemachine</h3>
+                        <p> Når vi startede på at kode javascripten til spillet var det vigtigt at vide hvordan spillet
+                            skulde virke fær vi helt begynte at kode det.
+                            det gjorde vi gennem aktivitetsdiagram som er en måde at vise hvordan et spil skal fungere,
+                            det ville vise hele gameplay looped sammen med at have en lille introduction til spillet.
+                        </p>
+                        <p>
+                            Den næste det del man kan lave for at holde styr på spillet er at have en statemachine som
+                            viser meget at det samme som aktivitetsdiagrammet men isted for bare at have ideen så skal
+                            statemachinen skrives som koden skal være, så den skal have alle funktionerne og hvad der
+                            sker i alle funktioner
+                        </p>
+
+                    </div>
+                    <img class="port_img" src="img/aktivitetsdiagram.webp" alt="et aktivitetsdiagram">
+                    <div class="move_down">
+                        <h3>Tilfældige numre</h3>
+                        <p>I vores spil project skulde de ting der kommer hen over skærmen have tilfældige positioner
+                            sådan at spillet ikke bliver for let eller kedeligt. for at give de forskellige ting
+                            tilfældige positioner lærte vi to forskellige måder at gøre det på. Vi kunne enten lave en
+                            math der randomizede et nummer mellem to forskellige tal, den skulde randomize igen før hver
+                            gang vi brugte den så der var altid randomizer koden lige over hvor vi brugte den.
+                        </p>
+                        <p>
+                            Og at have den skulde det hver gang er lidt irreteren men det tog også virkelige meget kode,
+                            så den anden måde er at lave en funktion som sender et random tal tilbage når den bliver
+                            kaldt i forehold til hvilket tal der blev sendt til funktionen.
+                        </p>
+                    </div>
+                    <img class="port_img" src="img/spilrandom.webp" alt="billede fra spillet">
+
+                </div>
+            </div>
+        </div>
+        <div class="port_width">
+            <div id="knap4" class="port_textbox">
+                <h2>Tema 5 Passionssite</h2>
+                <div>
+                    <img class="port_logo" src="img/aftereffect.webp" alt="aftereffect logo">
+                    <img class="port_logo" src="img/premierepro.webp" alt="premierepro logo">
+                    <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
+                    <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+                    <img id="pil-right4" class="port_logo" src="img/Expand_right.png" alt="pil til højre">
+                    <img id="pil-down4" class="port_logo" src="img/Expand_down.png" alt="pil ned">
+
+                </div>
+
+            </div>
+            <div id="port4" class="port_grid">
+                <div class="web_grid">
+                    <img class="web_img" src="img/webpassion.webp" alt="copmuter billede">
+                    <div class="web_bund"></div>
+                    <a class="web_img_button" href="http://viktorh.dk/kea/05_indhold/passion/">view</a>
+                </div>
+                <div class="grid_1-1">
+                    <div>
+                        <h3>Storyboard</h3>
+                        <p>Hvad skulde vi i opgaven
+                            Hvad er et storyboard
+                            hvorfor er det godt at brugestoryboards
+                        </p>
+                    </div>
+                    <img class="port_img" src="img/storyboard.webp" alt="billede af et storyboard">
+                    <div class="move_down">
+                        <h3>Fil formatering</h3>
+                        <p> Hvad skulde vi gøre i opgaven
+                            hvorfor lottie files?
+                            Hvilken filer er der og hvorfor bruge de forskellige?
+
+                        </p>
+                    </div>
+                    <img class="port_img" src="img/webimg10.webp" alt="billede af et slideshow">
+
+                </div>
+            </div>
+        </div>
+        <div class="port_width">
+            <div id="knap5" class="port_textbox">
+                <h2>Tema 5 Virksomhedssite</h2>
+                <div>
+                    <img class="port_logo" src="img/htmllogo.webp" alt="html logo">
+                    <img class="port_logo" src="img/csslogo.webp" alt="css logo">
+                    <img id="pil-right5" class="port_logo" src="img/Expand_right.png" alt="pil til højre">
+                    <img id="pil-down5" class="port_logo" src="img/Expand_down.png" alt="pil ned">
+                </div>
+
+            </div>
+            <div id="port5" class="port_grid">
+                <div class="web_grid">
+                    <img class="web_img" src="img/webosv.webp" alt="copmuter billede">
+                    <div class="web_bund"></div>
+                    <a class="web_img_button" href="http://viktorh.dk/kea/05_indhold/osv_opg/osv_website/">view</a>
+                </div>
+                <div class="grid_1-1">
+                    <div>
+                        <h3>Gruppearbejde</h3>
+                        <p>I denne her opgave omhandlede det meget om at kunne arbejde sammen med de andre personer. Vi
+                            lærte om scrum som er at man mødes i gruppen på bestemte tidspunkter normalt i starten eller
+                            slutningen af dagen for at sikre sig at alle ved vad der er blevet lavet og vad der bliver
+                            lavet i opgaven.</p>
+                        <p>Vi valgte at holde notater/tanker gennem opgaven på en stor figjam fil det hjalp meget med
+                            hvis nogen missede en dag eller to så kunne de se hvad der var blevet arbejdet på. vi kunne
+                            også have arbejdet mere med figma som er en meget god måde at holde styr på arbejde og hvem
+                            der laver hvad på et stort hold, men vi valgte ikke at gøre det da det ville være at lære en
+                            ny ting og vi tænkte at figma ville være nok i den her opgave</p>
+                    </div>
+                    <img class="port_img" src="img/webimg11.webp" alt="billede af et slideshow">
+                    <div class="move_down">
+                        <h3>Styletile eller Moodboard</h3>
+                        <p>Hvad er det
+                            hvad er forskelling
+                            hvorfor det ende
+                            hvorfor det andet
+
+                        </p>
+                    </div>
+                    <img class="port_img" src="img/webimg12.webp" alt="billede af et slideshow">
+
                 </div>
             </div>
         </div>
 
-        <!-- CODEPEN 
-
-        <div class="compare">
-            <section class="before">
-                <img src="img/logo.webp" alt="" />
-            </section>
-            <section class="after">
-                <img src="img/forside.webp" alt="" />
-            </section>
-            <input type="range" id="range" step="0.1">
-        </div>
-    
-        CODEPEN-->
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>lavet af Viktor</p>
+    </footer>
 
     <script src="menu.js"></script>
+    <script src="port.js"></script>
+    <script src="slide.js"></script>
 
 </body>
 
